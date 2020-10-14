@@ -1,11 +1,11 @@
 <?php
 	//Site url - add / at the end, eg: http://metin2cms.cf/mt2/ IMPORTANT!!!
-	$site_url="http://localhost:8080/millenium2/";
+	$site_url="http://localhost:8080/debugNurikiSite/Nuriki/";
 	
 	//Game database
 	$host = "localhost";
-	$user = "root";
-	$password = "root";
+	$user = "web_WUeJ526zu8mz";
+	$password = "2gkRHZuwJ2H86h42";
 	
 	//Mail settings
 	$SMTPAuth = true;
