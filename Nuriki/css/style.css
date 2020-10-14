@@ -1,0 +1,838 @@
+@charset "UTF-8";
+/*--------------------------------*/
+/* NovaMetin2
+/* Coded by LeKoArts
+/* http://www.lekoarts.de
+/* Copyright (c) 2015
+/* All rights reserved.
+/*--------------------------------*/
+/*----------------------------------------------------------
+// Schriftarten
+-----------------------------------------------------------*/
+@font-face {
+  font-family: 'alexonlightexpertregular';
+  src: url("../fonts/alexonlightexpert-webfont.eot");
+  src: url("../fonts/alexonlightexpert-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/alexonlightexpert-webfont.woff2") format("woff2"), url("../fonts/alexonlightexpert-webfont.woff") format("woff"), url("../fonts/alexonlightexpert-webfont.ttf") format("truetype"), url("../fonts/alexonlightexpert-webfont.svg#alexonlightexpertregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*----------------------------------------------------------
+// Variablen
+-----------------------------------------------------------*/
+/*----------------------------------------------------------
+// Mixins //
+-----------------------------------------------------------*/
+/*----------------------------------------------------------
+// Helferlein
+-----------------------------------------------------------*/
+
+
+
+
+.navLogo{
+	margin-top: -30px;
+	content:url("../img/Nova-Logo.png");
+
+}
+
+.footerLogo{
+	content:url("../img/logo.png");
+}
+
+
+.text--left {
+  text-align: left; }
+
+.text--center {
+  text-align: center; }
+
+.text--right {
+  text-align: right; }
+
+.text--justify {
+  text-align: justify; }
+
+.float--none {
+  float: none; }
+
+.float--right {
+  float: right; }
+
+.float--left {
+  float: left; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.center--all {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.media--fluid {
+  max-width: 100%;
+  height: auto; }
+
+.bold {
+  font-weight: 700; }
+
+.leerzeile {
+  height: 10px; }
+
+/*----------------------------------------------------------
+// Basis
+-----------------------------------------------------------*/
+html,
+button,
+input,
+select,
+textarea {
+  color: #d9d9d9;
+  box-sizing: border-box; }
+
+
+body {
+  line-height: 1.4;
+  background: #ddd4d4;
+  color: #d9d9d9;
+  font-size: 12px;
+  
+  font-family: Verdana Pro;
+    background: url(../img/bg.jpg) no-repeat;
+	background-position: top center;
+    background-color: #000000;
+	}
+
+::-moz-selection {
+  background: #ccc;
+  text-shadow: none; }
+
+::selection {
+  background: #ccc;
+  text-shadow: none; }
+
+a {
+  color: #ccc;
+  text-decoration: none; }
+
+a:hover, a:visited {
+  text-decoration: underline; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+  .padding-container{
+    margin: 0 30px 0 30px;
+	}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], select, input[type="url"] {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 38px;
+  background-color: #e4ddc3;
+  color: #918d8d;
+  line-height: 39px;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 12px;
+  padding-left: 10px; }
+
+a.button, a.button:hover, a.button:visited {
+  color: #d9d9d9;
+  text-decoration: none; }
+
+/*----------------------------------------------------------
+// Inhalt --- HOME
+-----------------------------------------------------------*/
+.main {
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1020px;
+  height: 100%;
+  overflow: hidden;  }
+  
+.navigation {
+  width: 100%;
+  height: 90px;
+  background: rgba(6, 5, 4, 0.74); 
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  top: 0px; }
+
+.content {
+  width: 930px;
+  height: 1700px;
+
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  top: 0px; }
+
+.navigation_buttons {
+  height: 76px;
+  width: 1250px;
+  position: relative; }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 0;
+   }
+  nav ul li {
+    display: inline-block;
+    height: 76px;
+	margin-top: 17px;
+    line-height: 65px;
+    width: 110px; }
+
+
+  nav ul a, nav ul a:visited, nav ul a:active {
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    display: block;
+	padding: 0;
+	margin: auto;
+    color: #fffed0;
+    text-decoration: none !important;
+    font-size: 14px;
+
+    font-family: Trajan Pro;
+
+    text-transform: uppercase; }
+
+p{
+    font-family: Trajan Pro;
+}
+
+.logo {
+	display: inline-block;
+	width: 276px;
+	height: 76px; 
+	padding : 10px;
+  }
+  
+.character-debug{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.newLogin {
+	text-align: center;
+	height: 40px; 
+	border-radius: 50px; 
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border: 2px solid #a73634;
+	line-height: 42px;
+	font-size: 18px;
+	padding: 0 10px 0 10px!important;
+  }
+
+.username{
+	text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+	height: 40px; 
+	border-radius: 50px; 
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border: 2px solid #ae974d;
+	line-height: 42px;
+	font-size: 18px;
+	padding: 0 10px 0 10px!important;
+}
+.jumbotron {
+	background: none!important;
+	padding: 20px;
+}
+
+.username:focus, .username.focus {
+	text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+	height: 40px; 
+	border-radius: 50px; 
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border: 2px solid #ae974d;
+	line-height: 42px;
+	font-size: 18px;
+	opacity: 1;
+}
+
+.username:hover {
+	text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+	height: 40px; 
+	border-radius: 50px; 
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border: 2px solid #ae974d;
+	line-height: 42px;
+	font-size: 18px;
+	opacity: 0.8;
+}
+
+.username:active, .btn-primary.active{
+	text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+	height: 40px; 
+	border-radius: 50px; 
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border: 2px solid #ae974d;
+	line-height: 42px;
+	font-size: 18px;
+	opacity: 0.5;
+}
+
+.p1SignIn{
+	font-family: Trajan Pro;
+	color : #cfc087;
+	font-size: 12px;
+	line-height: 8px;
+}
+
+.p2SignIn{
+	font-family: Trajan Pro;
+	font-size: 10px;
+	line-height: 22px;
+	margin-right : 20px;
+}
+
+
+.btn-submit {
+  color: #b6a15d;
+  width: 330px;
+  height: 38px;
+  border: none;
+  outline: none;
+  font-family: Trajan Pro;
+  font-size: 18px;
+  margin-top: 30px;
+  background: url(../img/registernow.png) no-repeat;
+  border-color: #2a88bd;
+}
+
+.btn-register:focus, .btn-primary.focus {
+	background: url(../img/registernow.png) no-repeat;
+	opacity: 1;
+}
+
+.btn-register:hover {
+	background: url(../img/registernow.png) no-repeat;
+	opacity: 0.8;
+}
+
+.btn-register:active, .btn-primary.active{
+	background: url(../img/registernow.png) no-repeat;
+	opacity: 0.5;
+}
+
+.registerForm{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.newLogin:hover {
+  border: 2px solid #7b3d3c; }
+
+.newLogin:active {
+  border: 2px solid #522424;
+font-size: 18px;  }
+
+
+.content-bg{
+	width: 930px;
+	height: 646px;
+	display: block;
+	background: url(../img/content-bg.png) no-repeat;
+	position: absolute;
+	overflow: hidden;
+	color:#9e8d73;
+	padding: 0 65px 0 65px;
+}
+
+.ranking-bg{
+	width: 930px;
+	min-height: 1095px;
+	display: block;
+	background: url(../img/rankingbg.png) no-repeat;
+	position: absolute;
+	overflow: hidden;
+	color:#9e8d73;
+}
+
+.buy_coins{
+    text-align: center;
+    width: 95%;
+	margin: 0 auto;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+}
+
+.section{
+	width: 210px;
+	height: 266px;
+	background: url(../img/section.png) no-repeat;
+	color:#9e8d73;
+}
+
+.section_title {
+  font-family: Trajan Pro;
+  font-size: 18px;
+  text-align: center;
+  line-height: 90px;
+  color : #972a2a;
+  text-shadow: 0px 2px 2px black;
+}
+
+.coin-6, .coin-5, .coin-7, .coin-4, .coin-3, 
+.coin-2, .coin-8, .coin-1
+{ display: inline-block; background: url('../img/coins.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.coin-6 { background-position: -10px -0px; width: 199px; height: 68px; }
+.coin-5 { background-position: -10px -78px; width: 151px; height: 66px; }
+.coin-7 { background-position: -10px -154px; width: 126px; height: 103px; }
+.coin-4 { background-position: -10px -267px; width: 123px; height: 75px; }
+.coin-3 { background-position: -10px -352px; width: 114px; height: 66px; }
+.coin-2 { background-position: -10px -428px; width: 107px; height: 61px; }
+.coin-8 { background-position: -10px -499px; width: 98px; height: 97px; }
+.coin-1 { background-position: -10px -606px; width: 82px; height: 55px; }
+
+
+.links {
+  min-height: 1341px;
+  width: 950px;
+  position: relative;
+  margin-top : 300px;
+  overflow: hidden; }
+
+.slider {
+  height: 270px;
+  width: 400px;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-bottom: 53px; }
+
+.news {
+  margin-top: 15px;
+  position: relative; }
+
+
+.footerul > .footerli {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
+
+
+
+
+
+
+.news::after {
+  content: " ";
+  display: block;
+  background: url(../img/Trennstrich.png) no-repeat;
+  height: 2px;
+  width: 630px;
+  margin-top: 15px; }
+
+.news-bild {
+  border: 2px solid #d9d9d9;
+  width: 161px; }
+  .news-bild img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.news-inhalt {
+  width: 452px;
+  height: 174px; }
+
+.news-text {
+  height: 139px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .news-text h1 {
+    margin-top: 0px;
+    color: #ccc;
+    text-shadow: 0px 2px 2px black;
+    font-size: 26px; }
+  .news-text p {
+    hyphens: auto;
+    text-align: justify;
+    color: #918d8d; }
+
+.news-unten {
+  height: 50px;
+  margin-top: 11px; }
+
+.datum_name {
+  line-height: 6px; }
+  .datum_name a:hover {
+    color: #ccc;
+    text-decoration: underline; }
+
+.rechts {
+  height: 1323px;
+  width: 310px;
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden; }
+
+.loginPanel {
+  margin: 0 auto;
+  width: 345px;
+  margin-top: 80px;
+  margin-bottom: 15px;
+  position: relative; }
+
+}
+
+
+.kategorie {
+  margin: 0 auto;
+
+  width: 310px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative; }
+
+.kategorie_ueberschrift {
+  font-family: "alexonlightexpertregular", Verdana, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: url(../img/ueberschrift.png) no-repeat;
+  text-align: center;
+  line-height: 40px;
+  text-shadow: 0px 2px 2px black;
+  width: 208px;
+  height: 55px;
+  margin: 0px auto 10px; }
+  
+.alignright { text-align: right; }
+
+.UPBtn1{
+  font-family: Trajan Pro;
+  background: url(../img/btn1.png) no-repeat;
+  text-align: center;
+  line-height: 33px;
+  width: 147px;
+  height: 33px;
+  border: none;
+  color: #ebd898;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.UPBtn2{
+  font-family: Trajan Pro;
+  background: url(../img/btn2.png) no-repeat;
+  text-align: center;
+  line-height: 33px;
+  width: 147px;
+  height: 33px;
+  border: none;
+  color: #ebd898;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.buttonContainer{
+	margin-top:50px;
+}
+
+.downloadlink1{
+  font-family: Trajan Pro;
+  background: url(../img/download1.png) no-repeat;
+  text-align: center;
+  line-height: 57px;
+  text-shadow: 0px 2px 2px black;
+  width: 373px;
+  height: 53px;
+  border: none;
+  color: #ebd898;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.downloadlink2{
+  font-family: Trajan Pro;
+  background: url(../img/download2.png) no-repeat;
+  text-align: center;
+  line-height: 57px;
+  text-shadow: 0px 2px 2px black;
+  width: 373px;
+  height: 53px;
+  border: none;
+  color: #ebd898;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.page-hd {
+	background-image: none!important;
+}
+.content_title, .pre-social {
+  font-family: Trajan Pro;
+  font-size: 20px;
+  text-align: center;
+  line-height: 90px;
+  color : #ebd898;
+  text-shadow: 0px 2px 2px black;
+}
+.pre-social {
+	margin-top: -5px;
+}
+.sub_content_title {
+  font-family: Trajan Pro;
+  font-size: 16px;
+  text-align: center;
+  line-height: 90px;
+  color : #ebd898;
+  text-shadow: 0px 2px 2px black;
+}
+  
+.social-icons {
+    text-align: center;
+}
+
+.social-icons:hover {
+    opacity: 0.7;
+}
+
+.social-icons li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+.social-icons li a {
+    border-bottom: none;
+}
+.social-icons li img {
+    width:70px;
+    height:70px;
+    margin-right: 20px;
+}
+
+.hoehle {
+  background: url(../img/hoehle.png) no-repeat;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: -10px; }
+
+.tabelle {
+  padding: 22px;
+  padding-top: 40px;
+  font-size: 10px;
+  font-family: "Open Sans", Verdana, sans-serif;
+  text-transform: none; }
+  .tabelle table {
+    width: 226px; }
+
+.statistiken_tabelle table tbody tr td:nth-child(2n) {
+  text-align: right;
+  color: #ccc; }
+
+.login form {
+  width: 258px;
+  margin: 0 auto; }
+  .login form .button {
+    margin-top: 10px;
+    padding-bottom: 8px; }
+
+.pw_vergessen_registrieren {
+  font-size: 10px;
+  text-align: right;
+  font-family: "Open Sans", Verdana, sans-serif; }
+  .pw_vergessen_registrieren p a {
+    color: white; }
+  .pw_vergessen_registrieren p:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 0px; }
+  .pw_vergessen_registrieren p:nth-child(2) {
+    margin-top: 2px;
+    margin-bottom: 0px; }
+
+.rangliste_tabelle {
+  font-size: 12px; }
+  .rangliste_tabelle table tbody tr th {
+    font-size: 14px; }
+  .rangliste_tabelle table tbody tr th:nth-child(2) {
+    text-align: left; }
+  .rangliste_tabelle table tbody tr td:nth-child(1), .rangliste_tabelle table tbody tr td:nth-child(3) {
+    text-align: center; }
+
+.gold, .silber, .bronze {
+  font-weight: 700; }
+
+.gold {
+  color: gold; }
+
+.silber {
+  color: silver; }
+
+.bronze {
+  color: #cd7f32; }
+
+.trailer iframe {
+  margin-left: 26px;
+  height: 140px;
+  width: 258px; }
+
+.social {
+  margin: 0 auto;
+  width: 258px; }
+  .social .button:nth-child(1) {
+    margin-left: 20px; }
+  .social .button:nth-child(2) {
+    margin-right: 20px; }
+
+footer {
+    clear: both;
+    position: relative;
+    height: 660px;
+    margin-top: -200px;
+    background: url(../img/footer.png) ;
+  }
+
+
+.copyright, .design_code {
+  font-family : Verdana Pro;
+  color: #ebd898;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 280px;
+  text-align: center;
+  position: relative;
+  top: 100px; }
+
+/*----------------------------------------------------------
+// Inhalt --- REGISTRATION
+-----------------------------------------------------------*/
+#register {
+  margin-top: 20px;
+  margin-right: 30px;
+  padding-left: 45px; }
+  #register table tbody tr {
+    height: 45px; }
+    #register table tbody tr td .button {
+      padding-bottom: 25px; }
+
+/*----------------------------------------------------------
+// Inhalt --- USERCP
+-----------------------------------------------------------*/
+.usercp {
+  margin: 0 auto; 
+  width : 370px;
+  text-align: center;
+  }
+
+/*----------------------------------------------------------
+// Inhalt --- CHARAKTERE
+-----------------------------------------------------------*/
+.charakter table {
+  table-layout: fixed;
+  width: 100%; }
+.charakter table tbody tr {
+  text-align: center; }
+.charakter table tbody tr:nth-child(1) {
+  height: 30px; }
+.charakter table tbody tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.2); }
+.charakter table tbody tr th:nth-child(4) {
+  width: 110px; }
+.charakter table tbody tr th:nth-child(5) {
+  width: 120px; }
+.charakter table tbody tr td select option {
+  color: #000; }
+
+/*----------------------------------------------------------
+// Inhalt --- DATEN ÄNDERN
+-----------------------------------------------------------*/
+.daten_aendern form table tbody tr {
+  height: 30px; }
+.daten_aendern form table tbody tr th, .daten_aendern form table tbody tr td {
+  width: 320px; }
+.daten_aendern > form table tbody tr th .button {
+  padding-bottom: 10px;
+  font-weight: 300;
+  margin-top: 15px; }
+
+.sicherheitsfrage {
+  color: black; }
+
+/*----------------------------------------------------------
+// Inhalt --- RANGLISTE
+-----------------------------------------------------------*/
+#rangliste_page {
+  text-align: center;
+  table-layout: fixed;
+  width: 100%; }
+
+.rangliste table tbody tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.rangliste_head {
+  height: 30px; }
+
+.charakter_gilde_auswahl_pagination {
+  margin-top: 25px; }
+
+.meh {
+  color: red; }
+
+.languagebox {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  right: 0;
+  margin-right: 50px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
