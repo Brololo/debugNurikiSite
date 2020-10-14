@@ -2086,7 +2086,16 @@
 		$stmt->bindParam(':job2', $job2, PDO::PARAM_INT);
 		$stmt->execute();
 		$result=$stmt->fetch(PDO::FETCH_ASSOC);
-		
+
+
+		if (!$result){
+			return [
+				"name" => "Aucun",
+				"level" => "0",
+				"playtime" => "0",
+			];
+		}
+
 		return $result;
 	}
 ?>
