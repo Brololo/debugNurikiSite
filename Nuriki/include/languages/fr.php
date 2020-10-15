@@ -25,7 +25,7 @@ $lang = array(
 	'user-name-or-email' => 'Nom d\'utilisateur ou Email',
 	'password' => 'Mot de passe',
 	'rpassword' => 'Confirmer le mot de passe',
-	'email-address' => 'adresse Email',
+	'email-address' => 'Adresse Email',
 	'new-email-address' => 'Nouvelle adresse Email',
 	'captcha-code' => 'Captcha',
 	'not-available' => 'n\'est pas disponible.',
@@ -247,6 +247,12 @@ $lang = array(
 	
 	//v2.11
 	'reward-players' => 'Récompense joueurs',
-	'reward-players-info' => 'Envoyer un objet cadeau dans le jeu.'
+	'reward-players-info' => 'Envoyer un objet cadeau dans le jeu',
+
+	//v2.12
+	'best-player-by-class' => 'Meilleurs joueurs par classe',
+	'global-ranking' => 'Rang global',
+	'best' => 'Meilleur',
+	'reward-players' => 'Récompense joueurs'
 	);
 ?>

@@ -66,7 +66,7 @@
 				
 								
 				<ul class="nav nav-tabs">
-					<li class="active"><a data-toggle="tab" href="#panel_news_tabs2_1">News</a></li>
+					<li class="active"><a data-toggle="tab" href="#panel_news_tabs2_1"><?php print $lang['news']; ?></a></li>
 				</ul>
 				
 				<div class="tab-content">
@@ -86,12 +86,12 @@
 	
 	<div class="row" style="padding-top: 200px;">
 		<div class="col-xs-4">
-			<div class="home_title2">Best player by class</div>
+			<div class="home_title2"><?php print $lang['best-player-by-class']; ?></div>
 			
 			<div class="panel_best_player">
 			<?php $shaman = getBestplayerByClass(3, 7); ?>
 					<div class="panel_ranking_avatar_shaman"></div>
-					<h6>Best SHAMAN</h6>
+					<h6><?php print $lang['best'] . " " . $lang['shaman']; ?></h6>
 					<span class="panel_best_player_name"><?php print $shaman['name']; ?></span>
 					<span class="panel_best_player_level">Lvl. <?php print $shaman['level']; ?></span>
 					<span class="panel_best_player_time"><?php print $shaman['playtime'].' '.$lang['minutes']; ?></span>
@@ -99,7 +99,7 @@
 			<div class="panel_best_player">
 			<?php $ninja = getBestplayerByClass(1, 5); ?>
 					<div class="panel_ranking_avatar_ninja"></div>
-					<h6>Best NINJA</h6>
+					<h6><?php print $lang['best'] . " " . $lang['ninja']; ?></h6>
 					<span class="panel_best_player_name"><?php print $ninja['name']; ?></span>
 					<span class="panel_best_player_level">Lvl. <?php print $ninja['level']; ?></span>
 					<span class="panel_best_player_time"><?php print $ninja['playtime'].' '.$lang['minutes']; ?></span>
@@ -107,7 +107,7 @@
 			<div class="panel_best_player">
 			<?php $war = getBestplayerByClass(0, 4); ?>
 					<div class="panel_ranking_avatar_warrior"></div>
-					<h6>Best WARRIOR</h6>
+					<h6><?php print $lang['best'] . " " . $lang['warrior']; ?></h6>
 					<span class="panel_best_player_name"><?php print $war['name']; ?></span>
 					<span class="panel_best_player_level">Lvl. <?php print $war['level']; ?></span>
 					<span class="panel_best_player_time"><?php print $war['playtime'].' '.$lang['minutes']; ?></span>
@@ -115,14 +115,14 @@
 			<div class="panel_best_player">
 			<?php $sura = getBestplayerByClass(2, 6); ?>
 					<div class="panel_ranking_avatar_sura"></div>
-					<h6>Best SURA</h6>
+					<h6><?php print $lang['best'] . " " . $lang['sura']; ?></h6>
 					<span class="panel_best_player_name"><?php print $sura['name']; ?></span>
 					<span class="panel_best_player_level">Lvl. <?php print $sura['level']; ?></span>
 					<span class="panel_best_player_time"><?php print $sura['playtime'].' '.$lang['minutes']; ?></span>
 			</div>
 		</div>
 		<div class="col-xs-8">
-			<div class="home_title2">Global Ranking</div>
+			<div class="home_title2"><?php print $lang['global-ranking']; ?></div>
 			
 			<div class="panel_ranking">
 				<h6 class="panel_ranking_title">Top 10 <?php print $lang['players']; ?></h6>
