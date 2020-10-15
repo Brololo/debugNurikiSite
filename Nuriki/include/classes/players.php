@@ -8,7 +8,7 @@ class paginate
 	{
 		global $host, $user, $password;
 		$database = new Database();
-		$db = $database->dbConnection($host, "player", $user, $password);
+		$db = $database->dbConnection($host, "srv1_player", $user, $password);
 		$this->db = $db;
     }
 	
