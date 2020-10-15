@@ -50,7 +50,7 @@
 		<div class="col-xs-5">
 			<div class="panel_news">
 				<div style="text-align: center;">
-					<a href="<?php print $social_links['discord']; ?>" style="margin-right: 15px; margin-left: -15px;"><img src="<?php print $site_url; ?>img/new/discord.png" /></a>
+					<a target="_blank" href="<?php print $social_links['discord']; ?>" style="margin-right: 15px; margin-left: -15px;"><img src="<?php print $site_url; ?>img/new/discord.png" /></a>
 					<a href="<?php print $social_links['facebook']; ?>"><img src="<?php print $site_url; ?>img/new/facebook.png" /></a>
 				</div>
 				
