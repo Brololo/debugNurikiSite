@@ -514,12 +514,12 @@ if($page=='news' || $page=='')
             <li>
                 <a class="aaa" href="<?php print $site_url; ?>ranking/players"><?php print $lang['ranking']; ?></a>
             </li>
-            <li>
-                <a class="aaa" href="<?php print $forum; ?>" target="_blank">Forum</a></a>
+            <!-- <li>
+                <a class="aaa" href="<?php// print $forum; ?>" target="_blank">Forum</a></a>
             </li>
             <li>
-                <a class="aaa" href="<?php print $shop_url; ?>" target="_blank">Item Shop</a>
-            </li>
+                <a class="aaa" href="<?php// print $shop_url; ?>" target="_blank">Item Shop</a>
+            </li> -->
 			<?php if(!$database->is_loggedin()) { ?>
 			<li>
 				<a href="<?php print $site_url; ?>users/login" class="newLogin"><?php print $lang['login']; ?></a>
@@ -595,12 +595,12 @@ if($page=='news' || $page=='')
 							<li>
 								<a href="<?php print $site_url; ?>ranking/players"><?php print $lang['ranking']; ?></a>
 							</li>
-							<li>
-								<a href="<?php print $forum; ?>" target="_blank">Forum</a></a>
+							<!-- <li>
+								<a href="<?php// print $forum; ?>" target="_blank">Forum</a></a>
 							</li>
 							<li>
-								<a href="<?php print $shop_url; ?>" target="_blank">Item Shop</a>
-							</li>
+								<a href="<?php// print $shop_url; ?>" target="_blank">Item Shop</a>
+							</li> -->
 					</ul>
 				</nav><!-- nav -->
             <span>&copy; Copyright <?php
