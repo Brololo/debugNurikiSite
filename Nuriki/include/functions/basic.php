@@ -144,12 +144,12 @@
 	{
 		global $database;
 		
-		$stmt = $database->runQueryAccount("SELECT coins FROM account WHERE id=:id");
+		$stmt = $database->runQueryAccount("SELECT cash FROM account WHERE id=:id");
 		$stmt->bindParam(':id', $id, PDO::PARAM_INT);
 		$stmt->execute();
 		$result=$stmt->fetch(PDO::FETCH_ASSOC);
 		
-		return $result['coins'];
+		return $result['cash'];
 	}
 
 	function getAccountSocialID($id)
@@ -176,17 +176,17 @@
 		return $result['password'];
 	}
 
-	function getAccountJD($id)
-	{
-		global $database;
+	// function getAccountJD($id)
+	// {
+	// 	global $database;
 		
-		$stmt = $database->runQueryAccount("SELECT jcoins FROM account WHERE id=:id");
-		$stmt->bindParam(':id', $id, PDO::PARAM_INT);
-		$stmt->execute();
-		$result=$stmt->fetch(PDO::FETCH_ASSOC);
+	// 	$stmt = $database->runQueryAccount("SELECT jcoins FROM account WHERE id=:id");
+	// 	$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+	// 	$stmt->execute();
+	// 	$result=$stmt->fetch(PDO::FETCH_ASSOC);
 		
-		return $result['jcoins'];
-	}
+	// 	return $result['jcoins'];
+	// }
 
 	function getAccountID($id)
 	{

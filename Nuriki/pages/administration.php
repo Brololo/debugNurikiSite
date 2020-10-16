@@ -99,7 +99,7 @@
 				<p><?php print $lang['user-name'].' : '.$account_name; ?></p>
 				<p><?php print $lang['email-address'].' : '.$myEmail; ?></p>
 				<p><?php print $lang['md'].' : '.getAccountMD($_SESSION['id']); ?></p>
-				<p><?php print $lang['jd'].' : '.getAccountJD($_SESSION['id']); ?></p>
+				<!-- <p><?php //print $lang['jd'].' : '.getAccountJD($_SESSION['id']); ?></p> -->
 				<hr>
 				<div class="row">
 					<div class="col-sm-4"><a href="<?php print $site_url; ?>user/characters" class="btn btn-primary btn-sm btn-block"><?php print $lang['chars']; ?> &raquo;</a></div>
