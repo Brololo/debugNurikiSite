@@ -138,7 +138,7 @@ class paginate
 		{
 			?>
             <tr>
-            <td>Nothing here...</td>
+            <td></td>
             </tr>
             <?php
 		}
